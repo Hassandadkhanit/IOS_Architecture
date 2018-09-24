@@ -13,6 +13,16 @@
 		1260EB7A21593451004CA9C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1260EB7821593451004CA9C0 /* LaunchScreen.storyboard */; };
 		1260EB89215936E5004CA9C0 /* AppStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1260EB88215936E5004CA9C0 /* AppStateManager.swift */; };
 		1260EB8B21593705004CA9C0 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1260EB8A21593705004CA9C0 /* BaseController.swift */; };
+		1260EB8F215938B6004CA9C0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1260EB8D215938B6004CA9C0 /* HomeViewController.swift */; };
+		1260EB90215938B6004CA9C0 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1260EB8E215938B6004CA9C0 /* HomeViewController.xib */; };
+		1260EB952159447B004CA9C0 /* WeatherHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1260EB932159447B004CA9C0 /* WeatherHeaderTableViewCell.swift */; };
+		1260EB962159447B004CA9C0 /* WeatherHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1260EB942159447B004CA9C0 /* WeatherHeaderTableViewCell.xib */; };
+		1260EB99215944F1004CA9C0 /* WeatherWeekTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1260EB97215944F1004CA9C0 /* WeatherWeekTableViewCell.swift */; };
+		1260EB9A215944F1004CA9C0 /* WeatherWeekTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1260EB98215944F1004CA9C0 /* WeatherWeekTableViewCell.xib */; };
+		1260EB9D215945C9004CA9C0 /* WeatherFooterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1260EB9B215945C9004CA9C0 /* WeatherFooterTableViewCell.swift */; };
+		1260EB9E215945C9004CA9C0 /* WeatherFooterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1260EB9C215945C9004CA9C0 /* WeatherFooterTableViewCell.xib */; };
+		1260EBA02159498C004CA9C0 /* TableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1260EB9F2159498C004CA9C0 /* TableViewExtension.swift */; };
+		1260EBA221595C85004CA9C0 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1260EBA121595C85004CA9C0 /* UIButtonExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		1260EB7B21593451004CA9C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1260EB88215936E5004CA9C0 /* AppStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateManager.swift; sourceTree = "<group>"; };
 		1260EB8A21593705004CA9C0 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		1260EB8D215938B6004CA9C0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1260EB8E215938B6004CA9C0 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		1260EB932159447B004CA9C0 /* WeatherHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		1260EB942159447B004CA9C0 /* WeatherHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		1260EB97215944F1004CA9C0 /* WeatherWeekTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWeekTableViewCell.swift; sourceTree = "<group>"; };
+		1260EB98215944F1004CA9C0 /* WeatherWeekTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherWeekTableViewCell.xib; sourceTree = "<group>"; };
+		1260EB9B215945C9004CA9C0 /* WeatherFooterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherFooterTableViewCell.swift; sourceTree = "<group>"; };
+		1260EB9C215945C9004CA9C0 /* WeatherFooterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherFooterTableViewCell.xib; sourceTree = "<group>"; };
+		1260EB9F2159498C004CA9C0 /* TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExtension.swift; sourceTree = "<group>"; };
+		1260EBA121595C85004CA9C0 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +111,8 @@
 		1260EB8321593670004CA9C0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1260EB9F2159498C004CA9C0 /* TableViewExtension.swift */,
+				1260EBA121595C85004CA9C0 /* UIButtonExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -105,6 +127,7 @@
 		1260EB8521593690004CA9C0 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				1260EB91215940DF004CA9C0 /* TableViewCells */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -119,8 +142,39 @@
 		1260EB87215936AE004CA9C0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				1260EB8C2159389E004CA9C0 /* HomeViewController */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1260EB8C2159389E004CA9C0 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1260EB8D215938B6004CA9C0 /* HomeViewController.swift */,
+				1260EB8E215938B6004CA9C0 /* HomeViewController.xib */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		1260EB91215940DF004CA9C0 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				1260EB9221594100004CA9C0 /* WeatherCells */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		1260EB9221594100004CA9C0 /* WeatherCells */ = {
+			isa = PBXGroup;
+			children = (
+				1260EB932159447B004CA9C0 /* WeatherHeaderTableViewCell.swift */,
+				1260EB942159447B004CA9C0 /* WeatherHeaderTableViewCell.xib */,
+				1260EB97215944F1004CA9C0 /* WeatherWeekTableViewCell.swift */,
+				1260EB98215944F1004CA9C0 /* WeatherWeekTableViewCell.xib */,
+				1260EB9B215945C9004CA9C0 /* WeatherFooterTableViewCell.swift */,
+				1260EB9C215945C9004CA9C0 /* WeatherFooterTableViewCell.xib */,
+			);
+			path = WeatherCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,9 +235,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1260EB962159447B004CA9C0 /* WeatherHeaderTableViewCell.xib in Resources */,
 				1260EB7A21593451004CA9C0 /* LaunchScreen.storyboard in Resources */,
+				1260EB9A215944F1004CA9C0 /* WeatherWeekTableViewCell.xib in Resources */,
 				1260EB7721593451004CA9C0 /* Assets.xcassets in Resources */,
+				1260EB9E215945C9004CA9C0 /* WeatherFooterTableViewCell.xib in Resources */,
 				1260EB752159344F004CA9C0 /* Main.storyboard in Resources */,
+				1260EB90215938B6004CA9C0 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +254,13 @@
 			files = (
 				1260EB702159344F004CA9C0 /* AppDelegate.swift in Sources */,
 				1260EB8B21593705004CA9C0 /* BaseController.swift in Sources */,
+				1260EB9D215945C9004CA9C0 /* WeatherFooterTableViewCell.swift in Sources */,
+				1260EBA02159498C004CA9C0 /* TableViewExtension.swift in Sources */,
+				1260EB99215944F1004CA9C0 /* WeatherWeekTableViewCell.swift in Sources */,
+				1260EBA221595C85004CA9C0 /* UIButtonExtension.swift in Sources */,
 				1260EB89215936E5004CA9C0 /* AppStateManager.swift in Sources */,
+				1260EB8F215938B6004CA9C0 /* HomeViewController.swift in Sources */,
+				1260EB952159447B004CA9C0 /* WeatherHeaderTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +406,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = IOS_Architecture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -359,6 +424,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = IOS_Architecture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
