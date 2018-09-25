@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
@@ -18,6 +19,7 @@ class HomeViewController: UIViewController {
     }
     func viewEssential() {
         registerTableView()
+        getApi()
     }
 
     func registerTableView() {
@@ -28,6 +30,17 @@ class HomeViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+    }
+    func getApi()  {
+        
+        var paramters : Parameters = [:]
+        var success : SuccessResult = {respone in
+            
+        }
+        var failure : FailureResult = {response in
+            
+        }
+        BaseApi.Shared.getRequest(success: success, failure: failure, parameters: paramters, routeUrl: Constants.baseUrl)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -79,7 +92,7 @@ extension HomeViewController : weatherFooterDelegate ,ExampleDelegate{
     }
     
     func refreshButtonTapped(button: UIButton) {
-        
+        getApi()
     }
     
     
