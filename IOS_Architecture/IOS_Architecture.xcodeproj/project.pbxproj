@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -107,10 +107,10 @@
 				1260EB8121593584004CA9C0 /* Shared */,
 				1260EB822159363B004CA9C0 /* BaseController */,
 				1260EB8321593670004CA9C0 /* Extensions */,
-				1260EB842159367E004CA9C0 /* CustomClasses */,
+				12DD8F23215C15B2008FF4F8 /* CustomClasses */,
 				1260EB8521593690004CA9C0 /* CustomViews */,
+				12DD8F24215C15C7008FF4F8 /* Models */,
 				12E87705215AA8B0000DC33E /* WebManager */,
-				1260EB86215936AA004CA9C0 /* Models */,
 				1260EB87215936AE004CA9C0 /* ViewControllers */,
 			);
 			path = IOS_Architecture;
@@ -141,26 +141,12 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		1260EB842159367E004CA9C0 /* CustomClasses */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CustomClasses;
-			sourceTree = "<group>";
-		};
 		1260EB8521593690004CA9C0 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
 				1260EB91215940DF004CA9C0 /* TableViewCells */,
 			);
 			path = CustomViews;
-			sourceTree = "<group>";
-		};
-		1260EB86215936AA004CA9C0 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		1260EB87215936AE004CA9C0 /* ViewControllers */ = {
@@ -199,6 +185,20 @@
 				1260EB9C215945C9004CA9C0 /* WeatherFooterTableViewCell.xib */,
 			);
 			path = WeatherCells;
+			sourceTree = "<group>";
+		};
+		12DD8F23215C15B2008FF4F8 /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomClasses;
+			sourceTree = "<group>";
+		};
+		12DD8F24215C15C7008FF4F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		12E87705215AA8B0000DC33E /* WebManager */ = {
@@ -252,11 +252,12 @@
 				TargetAttributes = {
 					1260EB6B2159344F004CA9C0 = {
 						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 1260EB672159344E004CA9C0 /* Build configuration list for PBXProject "IOS_Architecture" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -481,8 +482,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -495,10 +495,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = IOS_Architecture/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hassan-dad-khan.IOS-Architecture";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -514,10 +511,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = IOS_Architecture/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hassan-dad-khan.IOS-Architecture";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
