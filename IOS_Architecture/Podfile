@@ -7,53 +7,12 @@ target 'IOS_Architecture' do
 
   # Pods for IOS_Architecture
 
-	pod 'Alamofire'
-	pod 'SwiftyJSON'
-=begin
-	pod 'RealmSwift'
-	pod "JDropDownAlert"
-	
-	pod "SkeletonView"
-	pod 'SwiftMessages'
-	pod 'ParallaxHeader'
-	pod 'IQKeyboardManagerSwift'
-	pod 'ReachabilitySwift'
-	pod 'Fabric'
-	pod 'Crashlytics'
-	pod 'DeviceKit'
-	
-
-	pod 'Permission/Camera'
-	pod 'Permission/Notifications'
-	pod 'Permission/Microphone'
-	pod 'Permission/Photos'
-=end
-
-# Uncomment if you want to use these permission pods
-=begin
-	pod 'Permission/LocationAlways'
-	pod 'Permission/LocationWhenInUse'
-	pod 'Permission/MediaLibrary'
-	pod 'Permission/Contacts'
-	pod 'Permission/Bluetooth'
-	pod 'Permission/Events'
-	pod 'Permission/Motion'
-	pod 'Permission/Reminders'
-	pod 'Permission/SpeechRecognizer'
-	pod 'Permission/Siri'
-=end
-
-# Uncomment if you want to use these pods
-=begin
-	pod 'GoogleMaps'
- 	pod 'GooglePlaces'
-	pod 'Google-Mobile-Ads-SDK'
-	pod 'Firebase/Core'
-	pod 'Firebase/RemoteConfig'
-	pod 'FacebookCore'
-	pod 'FacebookLogin'
-	pod 'FacebookShare'
-	pod 'TwitterKit'
-=end
+    pod 'Alamofire'
+    pod 'SwiftyJSON'
+    pod 'ReachabilitySwift'
+    pod 'NVActivityIndicatorView'
+    pod 'IQKeyboardManagerSwift'
+    pod 'DeviceKit'
+    pod 'SwiftValidator', :git => 'https://github.com/jpotts18/SwiftValidator.git', :tag => '4.2.0'
 
 end

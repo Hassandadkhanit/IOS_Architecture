@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  IOS_Architecture
 //
-//  Created by Hassan dad khan on 24/09/2018.
-//  Copyright © 2018 Hassan dad khan. All rights reserved.
+//  Created by Hassan dad khan on 05/09/2019.
+//  Copyright © 2019 Hassan dad khan. All rights reserved.
 //
 
 import UIKit
@@ -14,9 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        landingPage()
         return true
     }
 
@@ -42,15 +41,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-    //MARK: Navigation Controller
-    func landingPage()  {
-        let homeVC = HomeViewController(nibName: "HomeViewController", bundle: nil)
-        let navigationController = UINavigationController()
-        navigationController.viewControllers = [homeVC]
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.makeKeyAndVisible()
-        self.window?.rootViewController = navigationController
-    }
 
 }
 
