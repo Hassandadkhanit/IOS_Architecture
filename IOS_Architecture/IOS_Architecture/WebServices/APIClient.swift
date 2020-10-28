@@ -11,5 +11,4 @@ import Foundation
 class APIClient : APIClientHandler {
     static var shared = APIClient()
     
-    func getData(compl)
 }

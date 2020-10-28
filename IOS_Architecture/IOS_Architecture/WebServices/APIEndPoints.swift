@@ -11,7 +11,7 @@ import Foundation
 struct APIEndPoints {
     static let users = "user"
     
-    static func getUrl() -> URL  {
-        
-    }
+//    static func getUrl() -> URL  {
+//        
+//    }
 }

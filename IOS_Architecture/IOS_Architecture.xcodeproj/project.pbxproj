@@ -23,6 +23,8 @@
 		B9C7A36623212FA200C0CB34 /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9C7A36423212FA200C0CB34 /* BaseViewController.xib */; };
 		B9C7A36923213DEC00C0CB34 /* DynamicContraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C7A36823213DEC00C0CB34 /* DynamicContraints.swift */; };
 		B9C7A36B2321460A00C0CB34 /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C7A36A2321460A00C0CB34 /* DeviceType.swift */; };
+		B9F1C75724256E5C008C0E2F /* IGTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9F1C75624256E5C008C0E2F /* IGTextField.xib */; };
+		B9F1C75924256E74008C0E2F /* IGTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F1C75824256E74008C0E2F /* IGTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		B9C7A36423212FA200C0CB34 /* BaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
 		B9C7A36823213DEC00C0CB34 /* DynamicContraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicContraints.swift; sourceTree = "<group>"; };
 		B9C7A36A2321460A00C0CB34 /* DeviceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
+		B9F1C75624256E5C008C0E2F /* IGTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IGTextField.xib; sourceTree = "<group>"; };
+		B9F1C75824256E74008C0E2F /* IGTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,8 @@
 		B9C7A3542321270400C0CB34 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				B9F1C75624256E5C008C0E2F /* IGTextField.xib */,
+				B9F1C75824256E74008C0E2F /* IGTextField.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -279,6 +285,7 @@
 				B9C7A3482321266A00C0CB34 /* Assets.xcassets in Resources */,
 				B9C7A3462321266900C0CB34 /* Main.storyboard in Resources */,
 				B9C7A35A232127E700C0CB34 /* LandingPageViewController.xib in Resources */,
+				B9F1C75724256E5C008C0E2F /* IGTextField.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +358,7 @@
 				B9C7A36923213DEC00C0CB34 /* DynamicContraints.swift in Sources */,
 				B9C7A359232127E700C0CB34 /* LandingPageViewController.swift in Sources */,
 				B9C3175A240E65D400733CBC /* APIClientHandler.swift in Sources */,
+				B9F1C75924256E74008C0E2F /* IGTextField.swift in Sources */,
 				B9C3175E240E90AA00733CBC /* APIEndPoints.swift in Sources */,
 				B9C7A36523212FA200C0CB34 /* BaseViewController.swift in Sources */,
 				B9C31758240E5CB900733CBC /* APIClient.swift in Sources */,
