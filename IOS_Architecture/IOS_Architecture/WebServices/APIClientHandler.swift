@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import Alamofire
 
-typealias APIClientCompletionBlock = (_ response: HTTPURLResponse?, _ result: AnyObject?, _ error: NSError?) -> Void
+typealias APIClientCompletionBlock = (_ response: HTTPURLResponse?, _ result: AnyObject?, _ error: Error?) -> Void
 
 enum HTTPHeaderField: String {
     case authentication     = "Authorization"
@@ -68,12 +68,13 @@ class APIClientHandler  {
                         completionHandler(response.response, response.result.value as AnyObject?, nil)
                         break
                     case .failure(let error):
-                        completionHandler(response.response, nil, error as NSError?)
+                        completionHandler(response.response, nil, error)
                         break
                     
                 }
         }
     }
+    
     
     
     

@@ -1,21 +1,23 @@
 {
   "images" : [
     {
+      "filename" : "github_logo.png",
       "idiom" : "universal",
-      "filename" : "logo-so-white.png",
       "scale" : "1x"
     },
     {
+      "filename" : "github_logo-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "github_logo-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
   ],
   "info" : {
-    "version" : 1,
-    "author" : "xcode"
+    "author" : "xcode",
+    "version" : 1
   }
 }

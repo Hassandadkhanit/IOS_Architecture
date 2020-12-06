@@ -16,7 +16,8 @@ class IGTextField : UIView {
     @IBOutlet weak var imgLeft: UIImageView!
     @IBOutlet weak var lblErrorMessage: UILabel!
     @IBOutlet weak var backgroundView: UIView!
-    
+    @IBOutlet weak var imgLeftHeightWidth: NSLayoutConstraint!
+    @IBOutlet weak var imgRightHeightWidth: NSLayoutConstraint!
     var view : UIView!
     
     //MARK: - InitView
@@ -53,28 +54,49 @@ class IGTextField : UIView {
     
     @IBInspectable var rightImage : UIImage? {
         get {
-            return self.rightImage
+            return imgRight.image
         }
         set {
             if let image = newValue {
                 self.imgRight.image = image
+                self.imgLeftHeightWidth.constant = 24
+            } else {
+                self.imgLeftHeightWidth.constant = 0
+
             }
         }
     }
     
     @IBInspectable var leftImage : UIImage? {
         get {
-            return self.leftImage
+            return imgLeft.image
         }
         set {
             if let image = newValue {
                 self.imgLeft.image = image
+                self.imgRightHeightWidth.constant = 24
+            } else {
+                self.imgRightHeightWidth.constant = 0
+
             }
         }
+        
     }
+    
+   @IBInspectable var placeHolder : String? {
+          get {
+            return self.textField.placeholder
+          }
+          set {
+              if let text = newValue {
+                self.textField.placeholder = text
+              }
+          }
+      }
+    
     @IBInspectable var placeHolderColor : UIColor? {
-        get{
-           return self.placeHolderColor
+        get {
+            return self.placeHolderColor
         }
         set {
             if let color = newValue {

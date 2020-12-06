@@ -13,6 +13,7 @@ target 'IOS_Architecture' do
     pod 'NVActivityIndicatorView'
     pod 'IQKeyboardManagerSwift'
     pod 'DeviceKit'
+    pod 'SDWebImage'
     pod 'SwiftValidator', :git => 'https://github.com/jpotts18/SwiftValidator.git', :tag => '4.2.0'
 
 end

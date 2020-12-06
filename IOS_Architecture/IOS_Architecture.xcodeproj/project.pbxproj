@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		6E6EF2A7DEE07C3D9EB003B2 /* Pods_IOS_Architecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D00CA548521425B555EDC65 /* Pods_IOS_Architecture.framework */; };
+		B97776B7257D383F00C8EB38 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97776B6257D383F00C8EB38 /* ViewExtension.swift */; };
+		B97776BB257D3EB700C8EB38 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97776BA257D3EB700C8EB38 /* UIImageViewExtension.swift */; };
+		B97776BD257D470700C8EB38 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97776BC257D470700C8EB38 /* StringExtension.swift */; };
 		B9C31756240E3EC600733CBC /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C31755240E3EC600733CBC /* DataManager.swift */; };
 		B9C31758240E5CB900733CBC /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C31757240E5CB900733CBC /* APIClient.swift */; };
 		B9C3175A240E65D400733CBC /* APIClientHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C31759240E65D400733CBC /* APIClientHandler.swift */; };
@@ -20,7 +23,6 @@
 		B9C7A35A232127E700C0CB34 /* LandingPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9C7A358232127E700C0CB34 /* LandingPageViewController.xib */; };
 		B9C7A35C2321281200C0CB34 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C7A35B2321281200C0CB34 /* Constants.swift */; };
 		B9C7A36523212FA200C0CB34 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C7A36323212FA200C0CB34 /* BaseViewController.swift */; };
-		B9C7A36623212FA200C0CB34 /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9C7A36423212FA200C0CB34 /* BaseViewController.xib */; };
 		B9C7A36923213DEC00C0CB34 /* DynamicContraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C7A36823213DEC00C0CB34 /* DynamicContraints.swift */; };
 		B9C7A36B2321460A00C0CB34 /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C7A36A2321460A00C0CB34 /* DeviceType.swift */; };
 		B9F1C75724256E5C008C0E2F /* IGTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9F1C75624256E5C008C0E2F /* IGTextField.xib */; };
@@ -31,6 +33,9 @@
 		1F1EE447E2FFB7B6199EBDA6 /* Pods-IOS_Architecture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS_Architecture.debug.xcconfig"; path = "Target Support Files/Pods-IOS_Architecture/Pods-IOS_Architecture.debug.xcconfig"; sourceTree = "<group>"; };
 		7D00CA548521425B555EDC65 /* Pods_IOS_Architecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Architecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81A36559EA0A49C3B23948FF /* Pods-IOS_Architecture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS_Architecture.release.xcconfig"; path = "Target Support Files/Pods-IOS_Architecture/Pods-IOS_Architecture.release.xcconfig"; sourceTree = "<group>"; };
+		B97776B6257D383F00C8EB38 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		B97776BA257D3EB700C8EB38 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		B97776BC257D470700C8EB38 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		B9C31755240E3EC600733CBC /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		B9C31757240E5CB900733CBC /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		B9C31759240E65D400733CBC /* APIClientHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientHandler.swift; sourceTree = "<group>"; };
@@ -45,7 +50,6 @@
 		B9C7A358232127E700C0CB34 /* LandingPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandingPageViewController.xib; sourceTree = "<group>"; };
 		B9C7A35B2321281200C0CB34 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B9C7A36323212FA200C0CB34 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		B9C7A36423212FA200C0CB34 /* BaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
 		B9C7A36823213DEC00C0CB34 /* DynamicContraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicContraints.swift; sourceTree = "<group>"; };
 		B9C7A36A2321460A00C0CB34 /* DeviceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
 		B9F1C75624256E5C008C0E2F /* IGTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IGTextField.xib; sourceTree = "<group>"; };
@@ -70,6 +74,13 @@
 				7D00CA548521425B555EDC65 /* Pods_IOS_Architecture.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B95910FA2549F440002F8DCE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		B9C7A3342321266900C0CB34 = {
@@ -98,11 +109,12 @@
 				B9C7A3442321266900C0CB34 /* Main.storyboard */,
 				B9C7A34C2321266A00C0CB34 /* Info.plist */,
 				B9C7A36123212E2500C0CB34 /* Globals */,
+				B9C7A36023212DFA00C0CB34 /* Models */,
+				B9C7A3542321270400C0CB34 /* CustomViews */,
+				B95910FA2549F440002F8DCE /* ViewModels */,
 				B9C7A352232126C800C0CB34 /* ViewControlllers */,
 				B9C7A3552321272100C0CB34 /* SharedManager */,
-				B9C7A3542321270400C0CB34 /* CustomViews */,
 				B9C7A36723213DD000C0CB34 /* CustomClasses */,
-				B9C7A36023212DFA00C0CB34 /* Models */,
 				B9C7A35F2321297F00C0CB34 /* WebServices */,
 				B9C7A35D2321283D00C0CB34 /* Extensions */,
 				B9C7A353232126E900C0CB34 /* Utilities */,
@@ -156,6 +168,9 @@
 		B9C7A35D2321283D00C0CB34 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B97776B6257D383F00C8EB38 /* ViewExtension.swift */,
+				B97776BA257D3EB700C8EB38 /* UIImageViewExtension.swift */,
+				B97776BC257D470700C8EB38 /* StringExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -197,7 +212,6 @@
 			isa = PBXGroup;
 			children = (
 				B9C7A36323212FA200C0CB34 /* BaseViewController.swift */,
-				B9C7A36423212FA200C0CB34 /* BaseViewController.xib */,
 			);
 			path = BaseViewController;
 			sourceTree = "<group>";
@@ -281,7 +295,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9C7A34B2321266A00C0CB34 /* LaunchScreen.storyboard in Resources */,
-				B9C7A36623212FA200C0CB34 /* BaseViewController.xib in Resources */,
 				B9C7A3482321266A00C0CB34 /* Assets.xcassets in Resources */,
 				B9C7A3462321266900C0CB34 /* Main.storyboard in Resources */,
 				B9C7A35A232127E700C0CB34 /* LandingPageViewController.xib in Resources */,
@@ -298,28 +311,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IOS_Architecture/Pods-IOS_Architecture-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/DeviceKit/DeviceKit.framework",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
-				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftValidator/SwiftValidator.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-IOS_Architecture/Pods-IOS_Architecture-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeviceKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftValidator.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-IOS_Architecture/Pods-IOS_Architecture-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -361,10 +357,13 @@
 				B9F1C75924256E74008C0E2F /* IGTextField.swift in Sources */,
 				B9C3175E240E90AA00733CBC /* APIEndPoints.swift in Sources */,
 				B9C7A36523212FA200C0CB34 /* BaseViewController.swift in Sources */,
+				B97776B7257D383F00C8EB38 /* ViewExtension.swift in Sources */,
 				B9C31758240E5CB900733CBC /* APIClient.swift in Sources */,
+				B97776BD257D470700C8EB38 /* StringExtension.swift in Sources */,
 				B9C31756240E3EC600733CBC /* DataManager.swift in Sources */,
 				B9C7A36B2321460A00C0CB34 /* DeviceType.swift in Sources */,
 				B9C7A3412321266900C0CB34 /* AppDelegate.swift in Sources */,
+				B97776BB257D3EB700C8EB38 /* UIImageViewExtension.swift in Sources */,
 				B9C7A35C2321281200C0CB34 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
