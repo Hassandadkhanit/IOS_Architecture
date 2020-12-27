@@ -10,6 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LandingPageViewController" customModule="IOS_Architecture" customModuleProvider="target">
             <connections>
+                <outlet property="btnProfileView" destination="GmT-7c-4ew" id="gmz-Wp-Q1X"/>
+                <outlet property="logoImageView" destination="3S7-UR-twp" id="sbG-JO-kun"/>
+                <outlet property="usernameTextField" destination="EDI-Oy-eAe" id="tHi-Yc-VZF"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -46,6 +49,9 @@
                     <state key="normal" title="View profile">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="profileViewTapped:" destination="-1" eventType="touchUpInside" id="9bL-LS-Gjo"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -68,7 +74,7 @@
         </view>
     </objects>
     <resources>
-        <image name="github_logo" width="512" height="512"/>
+        <image name="github_logo" width="256" height="256"/>
         <image name="profile" width="24" height="24"/>
     </resources>
 </document>

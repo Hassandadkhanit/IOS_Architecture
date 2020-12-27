@@ -37,9 +37,7 @@ class APIClientHandler  {
     }()
     
     //MARK: - get Methods
-    func getHeaders() -> Dictionary<String,String> {
-        return [:]
-    }
+  
     func getMethod(method : HTTPMethodType) -> HTTPMethod {
         switch method {
         case .get:
@@ -51,16 +49,18 @@ class APIClientHandler  {
     //MARK: - create extra layer
     
     //MARK: - get Methods
-    func serverRequest(method : HTTPMethodType,
-                parameters : Parameters,
-                routeUrl : String,
-                completionHandler : @escaping APIClientCompletionBlock)  {
+    func serverRequest(
+            method : HTTPMethodType,
+            headers : [String:String],
+            parameters : Parameters,
+            routeUrl : String,
+            completionHandler : @escaping APIClientCompletionBlock)  {
 
     sessionManager.request(routeUrl,
                            method: getMethod(method: method),
                            parameters: parameters,
                            encoding: URLEncoding.default,
-                           headers:getHeaders())
+                           headers:headers)
             .responseJSON { (response) in
             
                 switch response.result {

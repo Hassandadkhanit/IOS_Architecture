@@ -11,4 +11,9 @@ import Foundation
 class APIClient : APIClientHandler {
     static var shared = APIClient()
     
+    func getHeaders() -> Dictionary<String,String> {
+          return [
+            "Accept": "application/vnd.github.v3+json"
+        ]
+      }
 }

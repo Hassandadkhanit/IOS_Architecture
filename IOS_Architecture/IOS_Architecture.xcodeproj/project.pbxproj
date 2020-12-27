@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		6E6EF2A7DEE07C3D9EB003B2 /* Pods_IOS_Architecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D00CA548521425B555EDC65 /* Pods_IOS_Architecture.framework */; };
+		B94A93402597F54600B4B0FE /* RouteUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94A933F2597F54600B4B0FE /* RouteUrls.swift */; };
+		B94A93422597F8C900B4B0FE /* GitHubClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94A93412597F8C900B4B0FE /* GitHubClient.swift */; };
 		B97776B7257D383F00C8EB38 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97776B6257D383F00C8EB38 /* ViewExtension.swift */; };
 		B97776BB257D3EB700C8EB38 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97776BA257D3EB700C8EB38 /* UIImageViewExtension.swift */; };
 		B97776BD257D470700C8EB38 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97776BC257D470700C8EB38 /* StringExtension.swift */; };
 		B9C31756240E3EC600733CBC /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C31755240E3EC600733CBC /* DataManager.swift */; };
 		B9C31758240E5CB900733CBC /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C31757240E5CB900733CBC /* APIClient.swift */; };
 		B9C3175A240E65D400733CBC /* APIClientHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C31759240E65D400733CBC /* APIClientHandler.swift */; };
-		B9C3175E240E90AA00733CBC /* APIEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C3175D240E90AA00733CBC /* APIEndPoints.swift */; };
 		B9C7A3412321266900C0CB34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C7A3402321266900C0CB34 /* AppDelegate.swift */; };
 		B9C7A3462321266900C0CB34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9C7A3442321266900C0CB34 /* Main.storyboard */; };
 		B9C7A3482321266A00C0CB34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9C7A3472321266A00C0CB34 /* Assets.xcassets */; };
@@ -33,13 +34,14 @@
 		1F1EE447E2FFB7B6199EBDA6 /* Pods-IOS_Architecture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS_Architecture.debug.xcconfig"; path = "Target Support Files/Pods-IOS_Architecture/Pods-IOS_Architecture.debug.xcconfig"; sourceTree = "<group>"; };
 		7D00CA548521425B555EDC65 /* Pods_IOS_Architecture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Architecture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81A36559EA0A49C3B23948FF /* Pods-IOS_Architecture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS_Architecture.release.xcconfig"; path = "Target Support Files/Pods-IOS_Architecture/Pods-IOS_Architecture.release.xcconfig"; sourceTree = "<group>"; };
+		B94A933F2597F54600B4B0FE /* RouteUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteUrls.swift; sourceTree = "<group>"; };
+		B94A93412597F8C900B4B0FE /* GitHubClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubClient.swift; sourceTree = "<group>"; };
 		B97776B6257D383F00C8EB38 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		B97776BA257D3EB700C8EB38 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		B97776BC257D470700C8EB38 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		B9C31755240E3EC600733CBC /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		B9C31757240E5CB900733CBC /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		B9C31759240E65D400733CBC /* APIClientHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientHandler.swift; sourceTree = "<group>"; };
-		B9C3175D240E90AA00733CBC /* APIEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndPoints.swift; sourceTree = "<group>"; };
 		B9C7A33D2321266900C0CB34 /* IOS_Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS_Architecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9C7A3402321266900C0CB34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9C7A3452321266900C0CB34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -115,7 +117,7 @@
 				B9C7A352232126C800C0CB34 /* ViewControlllers */,
 				B9C7A3552321272100C0CB34 /* SharedManager */,
 				B9C7A36723213DD000C0CB34 /* CustomClasses */,
-				B9C7A35F2321297F00C0CB34 /* WebServices */,
+				B9C7A35F2321297F00C0CB34 /* WebServicesManager */,
 				B9C7A35D2321283D00C0CB34 /* Extensions */,
 				B9C7A353232126E900C0CB34 /* Utilities */,
 				B9C7A35E232128D500C0CB34 /* Resources */,
@@ -183,14 +185,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		B9C7A35F2321297F00C0CB34 /* WebServices */ = {
+		B9C7A35F2321297F00C0CB34 /* WebServicesManager */ = {
 			isa = PBXGroup;
 			children = (
 				B9C31757240E5CB900733CBC /* APIClient.swift */,
 				B9C31759240E65D400733CBC /* APIClientHandler.swift */,
-				B9C3175D240E90AA00733CBC /* APIEndPoints.swift */,
+				B94A933F2597F54600B4B0FE /* RouteUrls.swift */,
+				B94A93412597F8C900B4B0FE /* GitHubClient.swift */,
 			);
-			path = WebServices;
+			path = WebServicesManager;
 			sourceTree = "<group>";
 		};
 		B9C7A36023212DFA00C0CB34 /* Models */ = {
@@ -351,11 +354,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B94A93422597F8C900B4B0FE /* GitHubClient.swift in Sources */,
 				B9C7A36923213DEC00C0CB34 /* DynamicContraints.swift in Sources */,
 				B9C7A359232127E700C0CB34 /* LandingPageViewController.swift in Sources */,
 				B9C3175A240E65D400733CBC /* APIClientHandler.swift in Sources */,
 				B9F1C75924256E74008C0E2F /* IGTextField.swift in Sources */,
-				B9C3175E240E90AA00733CBC /* APIEndPoints.swift in Sources */,
 				B9C7A36523212FA200C0CB34 /* BaseViewController.swift in Sources */,
 				B97776B7257D383F00C8EB38 /* ViewExtension.swift in Sources */,
 				B9C31758240E5CB900733CBC /* APIClient.swift in Sources */,
@@ -364,6 +367,7 @@
 				B9C7A36B2321460A00C0CB34 /* DeviceType.swift in Sources */,
 				B9C7A3412321266900C0CB34 /* AppDelegate.swift in Sources */,
 				B97776BB257D3EB700C8EB38 /* UIImageViewExtension.swift in Sources */,
+				B94A93402597F54600B4B0FE /* RouteUrls.swift in Sources */,
 				B9C7A35C2321281200C0CB34 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
