@@ -7,11 +7,12 @@
 //
 
 import Foundation
+import Alamofire
 
 class APIClient : APIClientHandler {
     static var shared = APIClient()
     
-    func getHeaders() -> Dictionary<String,String> {
+    func getHeaders() -> HTTPHeaders {
           return [
             "Accept": "application/vnd.github.v3+json"
         ]

@@ -18,22 +18,8 @@
 
 `DeviceKit` is a value-type replacement of [`UIDevice`](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIDevice_Class/).
 
-## Changelog
-Here you find an overview about all the latest features, bugfixes and breaking changes shipped with version 2.0 which was released on 10<sup>th</sup> April 2019.
-### Breaking changes version 2.0
-- The original `Device()` constructor has been made private in favour of using `Device.current` to match `UIDevice.current`.
-- The enum values for the iPhone Xs, iPhone Xs Max and iPhone Xʀ have been renamed to be `.iPhoneXS`, `.iPhoneXSMax` and `.iPhoneXR` to match proper formatting.
-- `.description` for the iPhone Xs, iPhone Xs Max and iPhone Xʀ have been changed to contain small caps formatting for the s and the ʀ part.
-- `.description` for the iPad 5 and iPad 6 have been changed to the proper names; iPad (5<sup>th</sup> generation) and iPad (6<sup>th</sup> generation).
-- `.name`, `.systemName`, `.systemVersion`, `.model`, `.localizedModel`, `.batteryState` and `.batteryLevel` will now all return nil when you try to get its value when the device you are getting it from isn't the current one. (eg. `Device.iPad6.name` while running on iPad 5)
-
-### New features
-- Updated to Swift 5!
-- New `.allDevicesWithRoundedDisplayCorners` and `.hasRoundedDisplayCorners` values to check if a device has rounded display corners. (eg. iPhone Xs and iPad Pro (3<sup>rd</sup> generation))
-- new `.allDevicesWithSensorHousing` and `.hasSensorHousing` values to check if a device has a screen cutout for the sensor housing. (eg. iPhone Xs)
-
-### Bugfixes
-- `.isPad` and `.isPhone` are now giving correct outputs again.
+## Current version 4.3.0
+See our detailed [changelog](CHANGELOG.md) for the latest features, improvements and bug fixes.
 
 ## Features
 
@@ -51,11 +37,11 @@ Here you find an overview about all the latest features, bugfixes and breaking c
 - [x] Display Zoom detection
 - [x] Detect available sensors (Touch ID, Face ID)
 - [x] Detect available disk space
-
+- [x] Apple Pencil support detection
 
 ## Requirements
 
-- iOS 8.0+ (linking against iOS 9.3 required)
+- iOS 9.0+ (linking against iOS 9.3 required)
 - tvOS 9.0+ (linking against tvOS 9.2 required)
 - watchOS 2.0+
 
@@ -66,7 +52,11 @@ DeviceKit can be installed in various ways.
 
 #### Swift 5
 ```ruby
-pod 'DeviceKit', '~> 2.0'
+pod 'DeviceKit', '~> 4.0'
+```
+#### iOS 8.0 support
+```ruby
+pod 'DeviceKit', '3.2'
 ```
 #### Swift 4.0 - Swift 4.2
 ```ruby
@@ -81,11 +71,32 @@ pod 'DeviceKit', '~> 1.2.3'
 pod 'DeviceKit', :git => 'https://github.com/devicekit/DeviceKit.git', :branch => 'swift-2.3-unsupported'
 ```
 
+### Swift Package Manager
+
+#### Swift 5
+```swift
+dependencies: [
+    .package(url: "https://github.com/devicekit/DeviceKit.git", from: "4.0.0"),
+    /// ...
+]
+```
+#### iOS 8.0 support
+```swift
+dependencies: [
+    .package(url: "https://github.com/devicekit/DeviceKit.git", from: "3.2.0"),
+    /// ...
+]
+```
+
 ### Carthage
 
 #### Swift 5
 ```ogdl
-github "devicekit/DeviceKit" ~> 2.0
+github "devicekit/DeviceKit" ~> 4.0
+```
+#### iOS 8.0 support
+```ogdl
+github "devicekit/DeviceKit" ~> 3.2
 ```
 #### Swift 4.0 - Swift 4.2
 ```ogdl
